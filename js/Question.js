@@ -10,7 +10,9 @@ class Question {
     this.option2 = createElement('h4');
     this.option3 = createElement('h4');
     this.option4 = createElement('h4');
-    this.message = createElement("h2")
+    this.message = createElement("h2");
+    this.message2 = createElement("h2");
+
   }
 
   hide(){
@@ -19,6 +21,7 @@ class Question {
     this.button.hide();
     this.input2.hide();
     this.message.hide();
+    this.message2.hide();
   }
 
   display(){
@@ -47,7 +50,10 @@ class Question {
     this.button.mousePressed(()=>{
       
     this.message.html("Thank You, Your Answer Has Been Submitted");
-    this.message.position(350, 350);
+    this.message.position(375, 300);
+
+    this.message2.html("We will send you your score shortly     :)");
+    this.message2.position(450, 350);
 
       // this.message.html("Thank You, Your Answer Has Been Submitted");
       // this.message.position();
